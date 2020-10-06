@@ -1,0 +1,89 @@
+#welcome {
+	/* Firefox */
+	height: -moz-calc(100vh - 50px);
+	/* WebKit */
+	height: -webkit-calc(100vh - 50px);
+	/* Opera */
+	height: -o-calc(100vh - 50px);
+	/* Standard */
+	height: calc(100vh - 50px);
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+#welcome, #aboutme, #contact {
+	scroll-margin-top: 50px;
+}
+
+.flipOver {
+	flex-direction: column-reverse;
+}
+
+.subcontent {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px auto;
+	width: 85%;
+	padding: 30px 0px;
+	box-sizing: border-box;
+}
+
+.imagecontainer {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.textcontainer {
+	text-align: center;
+}
+
+.icon {
+	max-width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+ #ReactBackgroundSlider > figure {
+ 	top: unset;
+ 	left: unset;
+ }
+
+ @media only screen and (min-width: 760px) {
+ 	#welcome {
+ 		/* Firefox */
+		height: -moz-calc(100vh - 80px);
+		/* WebKit */
+		height: -webkit-calc(100vh - 80px);
+		/* Opera */
+		height: -o-calc(100vh - 80px);
+		/* Standard */
+		height: calc(100vh - 80px);
+ 	}
+
+	#welcome, #aboutme, #contact {
+		scroll-margin-top: 80px;
+	}
+
+	.flipOver {
+		flex-direction: initial;
+	}
+
+	.subcontent {
+		align-items: center;
+		display: flex;
+		flex-wrap: initial;
+		width: 85%;
+	}
+
+	.imagecontainer {
+		width: 30%;
+		text-align: center;
+	}
+
+	.textcontainer {
+		width: 70%;
+		text-align: initial;
+	}
+ }

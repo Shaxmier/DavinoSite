@@ -1,0 +1,268 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	min-width: 320px;
+}
+
+header {
+	top: 0;
+	height: 10vh;
+	width: 100%;
+	min-height: 50px;
+	background-color: black;
+	position: fixed;
+	z-index: 99;
+}
+
+#content {
+	margin-top: 10vh;
+}
+
+ul {
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+li {
+	padding: 20px 20px;
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+ 	font-size: 12pt;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+ 	color: #002047;
+ 	font-size: 36px;
+ 	margin-bottom: 30px;
+}
+
+p {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+#welcome {
+	height: 90vh;
+	width: 100%;
+	position: relative;
+	scroll-margin-top: 10vh;
+}
+
+#aboutme {
+	scroll-margin-top: 10vh;
+}
+
+#contact {
+	scroll-margin-top: 10vh;
+	background-color: #ededed;
+	padding: 15px 0;
+}
+
+.flip {
+	flex-direction: column-reverse;
+}
+
+.subcontent {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px auto;
+	width: 85%;
+	padding: 30px 0px;
+	box-sizing: border-box;
+}
+
+.imagecontainer {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.textcontainer {
+	text-align: center;
+}
+
+.icon {
+	max-width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+#contactcontainer {
+	width: 85%;
+	margin: 0px auto;
+}
+
+#contacthead {
+	margin: 30px 0px 80px 0px;
+}
+
+#contacthead > p {
+	margin: 30px 0 10px 0px;
+}
+
+.label {
+	font-family: 'Oswald', sans-serif;
+ 	font-size: 30px;
+ 	color: #002047;
+}
+
+input {
+	margin-top: 10px;
+	width: 100%;
+	height: 50px;
+	font-size: 12pt;
+	font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+	margin-top: 10px;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12pt;
+}
+
+.formitem {
+	margin: 25px 0px 40px 0px; 
+}
+
+#submit {
+	background-color: #002047;
+	color: white;
+}
+
+footer {
+	background-color: black;
+}
+
+#credits {
+	text-align: center;
+	color: white;
+	padding-bottom: 15px;
+}
+
+#socials {
+	text-align: center;
+	padding: 25px 0px;
+ }
+
+ #ReactBackgroundSlider > figure {
+ 	top: unset !important;
+ 	left: unset !important;
+ }
+
+.fa {
+  padding: 20px;
+  font-size: 15px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.hidden {
+	display: none;
+}
+
+p > a {
+	color: blue !important;
+	text-decoration: underline !important;
+} 
+
+@media only screen and (min-width: 760px) {
+
+	nav {
+		min-height: 60px;
+	}
+
+	li {
+		font-size: 20pt;
+	}
+
+	.flip {
+		flex-direction: initial;
+	}
+
+	.subcontent {
+		align-items: center;
+		display: flex;
+		flex-wrap: initial;
+		width: 85%;
+	}
+
+	.imagecontainer {
+		width: 30%;
+		text-align: center;
+	}
+
+	.textcontainer {
+		width: 70%;
+		text-align: initial;
+	}
+
+	#contactcontainer {
+		margin: 0 auto;
+		text-align: left
+	}
+
+	#contacthead {
+		margin-left: 0;
+	}
+
+	.formblock {
+		width: 100%;
+		display: flex;
+	}
+
+	.formitem {
+		width: 50%;
+		margin: 25px 30px 30px 0px;
+	}
+
+	.fullformitem {
+		width: 100%;
+	}
+
+	.fa {
+		font-size: 30px;
+		width: 30px;
+		margin: 15px;
+	}
+}
